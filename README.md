@@ -27,7 +27,7 @@ This project integrates **YOLOv5 object detection**, **MiDaS depth estimation**,
 ---
 
 ## ✅ **Workflow Explanation**
-This project involves three main stages:
+This project involves Five main stages:
 
 1. **Object Detection with YOLOv5**
 2. **Depth Estimation with MiDaS**
@@ -38,7 +38,7 @@ This project involves three main stages:
 Let’s break each step down in detail:
 
 ### **1️⃣ Object Detection with YOLOv5**
-The project uses the **YOLOv5 model** to detect objects like cars, trucks, persons, and road signs from images extracted from video frames.
+uses the **YOLOv5 model** to detect objects like cars, trucks, persons, and road signs from images extracted from video frames.
 
 #### **How It Works:**
 - The **YOLOPY.py** script loads the pre-trained **YOLOv5x** model from the PyTorch Hub.
@@ -73,7 +73,7 @@ This will generate depth maps like:
 ---
 
 ### **3️⃣ Lane Detection in Blender**
-Your project includes lane detection functionality using **Blender** scripts:
+includes lane detection functionality using **Blender** scripts:
 
 - **`create_dashed_lanes.py`**: Generates dashed lane lines using curves and meshes in Blender.
 - **`create_solid_line.py`**: Creates solid lane lines in Blender to represent road boundaries.

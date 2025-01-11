@@ -178,9 +178,3 @@ pip install torch opencv-python matplotlib moviepy
 ```
 
 ---
-
-## 📄 **License**
-This project is licensed under the MIT License.
-
----
-

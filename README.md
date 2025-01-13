@@ -71,6 +71,7 @@ This will generate depth maps like below (This is a full image depth map)
 ### ** 3️⃣ Lane Detection **
 includes lane detection functionality using **Blender** scripts:
 - Network: YOLO Pv2 (https://github.com/CAIC-AD/YOLOPv2)
+- referance - Lane Detection: [LaneNet](https://github.com/IrohXu/lanenet-lane-detection-pytorch)
 - **`create_dashed_lanes.py`**: Generates dashed lane lines using curves and meshes in Blender.
 - **`create_solid_line.py`**: Creates solid lane lines in Blender to represent road boundaries.
 

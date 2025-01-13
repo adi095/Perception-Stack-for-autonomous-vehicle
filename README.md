@@ -5,27 +5,6 @@ This project integrates **YOLOv5 object detection**, **MiDaS depth estimation**,
 
 ---
 
-## 📁 **Project Structure**
-```plaintext
-📂 Perception_Stack_Autonomous_Vehicles
-├── 📂 Images                     # Input images for object detection
-├── 📂 Depth_Images               # Depth maps generated from MiDaS
-├── 📂 Results                    # CSV files with bounding boxes and depth values
-├── 📂 Blender                    # Rendered images from Blender
-├── 📂 Videos                     # Final video output
-├── 📄 object_detection_depth_estimation.py  # YOLOv5 + MiDaS script
-├── 📄 depthfunc.py               # Extract depth values from images
-├── 📄 blender_final.py           # Blender automation script
-├── 📄 make_video.py              # Convert rendered images to video
-├── 📄 create_dashed_lanes.py     # Creates dashed lane lines in Blender
-├── 📄 create_solid_line.py       # Creates solid lane lines in Blender
-├── 📄 collision_detection.py     # Checks for potential collisions using depth data
-├── 📄 README.md                  # Project documentation (this file)
-└── 📝 Additional Python Scripts  # Helper scripts for lane creation, brake lights, etc.
-```
-
----
-
 ## ✅ **Workflow Explanation**
 This project involves Five main stages:
 

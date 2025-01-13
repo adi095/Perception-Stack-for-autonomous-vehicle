@@ -49,7 +49,7 @@ The **MiDaS model** is used to estimate depth maps from the input images.
 - The **`depth_overall.py`** script loads the MiDaS model and processes images from the **`Images`** folder.
 - It generates depth maps for each image,for the pixels inside bounding boxes and saves them to the **`Depth_Images`** folder.
 - Here depth values are extracted by **`depthfunc.py`**only for the pixels inside bounding boxes to get more accurate depth values for each object.
-- **`DepthWorld.py`** script takes depth values and bounding box coordinates from the depth estimation step and converts pixel coordinates to world coordinates in a 3D space. 
+- **`DepthWorld.py`** script takes depth values and bounding box coordinates from the depth estimation step and converts 2D pixel coordinates to world coordinates in a 3D space. Applies Camera Intrinsics (Calibration Matrix)
 - Network: MiDaS Transformer (https://github.com/jankais3r/Video-Depthify)
 
 #### **Steps to Run Depth Estimation:**

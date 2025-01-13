@@ -86,12 +86,6 @@ These scripts are integrated into **`blender_final.py`** to add lane markings to
    ```bash
    blender --background --python create_solid_line.py
    ```
-   
-**Run `blender_final.py` to Integrate Everything:**
-   ```bash
-   blender --background --python blender_final.py
-   ```
-
 ---
 
 ### **4️⃣ Collision Detection**

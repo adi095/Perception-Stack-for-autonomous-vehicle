@@ -20,17 +20,24 @@ Let’s break each step down in detail:
 uses the **YOLOv5 model** to detect objects like cars, trucks, persons, and road signs from images extracted from video frames.
 
 #### **How It Works:**
+- **Readvideo.py** obtains frames from the video.
 - The **YOLOv5.py** script loads the pre-trained **YOLOv5x** model from the PyTorch Hub.
-- It processes images from the **`Images`** folder and saves the bounding box results to **CSV files**.
+- It processes images from the **`Images`** folder and saves the bounding box results to **CSV files** to calculate object midpoints.
+- Network: YOLOv5 (https://pytorch.org/hub/ultralytics_yolov5/)
 
 #### **Steps to Run YOLOv5 Detection:**
 ```bash
 python YOLOPY.py
 ```
 This will generate CSV files in the **`Results`** folder, such as:
-- **bounding_boxes_truck_31.csv**
+- **bounding_boxes_truck.csv**
 - **bounding_boxes_persons.csv**
 - **bounding_boxes_cars.csv**
+- **bounding_boxes_Traffic_Lights.csv**
+- **bounding_boxes_Stop_Signs.csv**
+
+  Image for referance
+  ![image](https://github.com/user-attachments/assets/595ae806-6513-476c-bb38-4326775c3d6c)
 
 ---
 
@@ -40,6 +47,7 @@ The **MiDaS model** is used to estimate depth maps from the input images.
 #### **How It Works:**
 - The **`depth_overall.py`** script loads the MiDaS model and processes images from the **`Images`** folder.
 - It generates depth maps for each image and saves them to the **`Depth_Images`** folder.
+-  Network: MiDaS Transformer (https://github.com/jankais3r/Video-Depthify)
 
 #### **Steps to Run Depth Estimation:**
 ```bash
@@ -51,9 +59,9 @@ This will generate depth maps like:
 
 ---
 
-### **3️⃣ Lane Detection in Blender**
+### **3️⃣ Lane Detection **
 includes lane detection functionality using **Blender** scripts:
-
+- Network: YOLO Pv2 (https://github.com/CAIC-AD/YOLOPv2)
 - **`create_dashed_lanes.py`**: Generates dashed lane lines using curves and meshes in Blender.
 - **`create_solid_line.py`**: Creates solid lane lines in Blender to represent road boundaries.
 
@@ -109,38 +117,16 @@ This will render the scene and save images to the **`Blender`** folder.
 
 ---
 
-## 🖥️ **How to Run the Entire Workflow**
-
-### **Step 1: Object Detection**
-```bash
-python YOLOV5.py
-```
-
-### **Step 2: Depth Estimation**
-```bash
-python depth_overall.py
-```
-
-### **Step 3: Depth Extraction**
-```bash
-python depthfunc.py
-```
-
-### **Step 4: Blender 3D Visualization**
-```bash
-blender --background --python blender_final.py
-```
-
-### **Step 5: Create Video Output**
-```bash
-python make_video.py
-```
-
-### **Step 6: Collision Detection**
-```bash
-python collision_detection.py
-```
----
+## References
+1. Lane Detection: [LaneNet](https://github.com/IrohXu/lanenet-lane-detection-pytorch)
+2. Monocular Depth Estimation: [MiDaS](https://github.com/isl-org/MiDaS)
+3. Object Detection (Cars, Trucks, Traffic Lights, Road Signs): 
+   - [MobilenetV1-SSD](https://github.com/xiaogangLi/tensorflow-MobilenetV1-SSD)
+   - [YOLOv7](https://github.com/WongKinYiu/yolov7)
+4. Traffic Light Detection: [YOLOv3 for Traffic Lights](https://github.com/sovit-123/TrafficLight-Detection-Using-YOLOv3)
+5. Road Sign Detection: [Road Sign Detection](https://github.com/Anantmishra1729/Road-sign-detection)
+6. 3D Bounding Boxes: [YOLO3D](https://github.com/ruhyadi/YOLO3D)
+7. Pedestrian Keypoint Detection: [Multi-Person Pose Estimation](https://github.com/ZheC/Realtime_Multi-Person_Pose_Estimation)
 
 ## 🛠 **Dependencies**
 - **Python 3.8+**

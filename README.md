@@ -68,7 +68,7 @@ This will generate depth maps like below (This is a full image depth map)
 
 ---
 
-### ** 3️⃣ Lane Detection **
+### **3️⃣ Lane Detection**
 includes lane detection functionality using **Blender** scripts:
 - Network: YOLO Pv2 (https://github.com/CAIC-AD/YOLOPv2)
 - referance - Lane Detection: [LaneNet](https://github.com/IrohXu/lanenet-lane-detection-pytorch)

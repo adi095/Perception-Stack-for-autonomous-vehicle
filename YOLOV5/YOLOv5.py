@@ -59,7 +59,22 @@ def yolomodel(imgs, filenames, valueid):
 
     for label, data in results_dict.items():
         if data:
+            #  Load original image to get its dimensions
+            img_path = os.path.join('D:/Perception_Stack_Autonomous_Vehicles-main/percetion_stack/code/Images', filenames[0])
+            img = cv2.imread(img_path)
+            img_height, img_width = img.shape[:2]
+
+            #  Convert bounding box coordinates to match the original image size
             df = pd.DataFrame(data, columns=['frame_name', 'xmin', 'xmax', 'ymin', 'ymax', 'confidence', 'label'])
+
+            scale_x = img_width / 640  # YOLOv5 default width
+            scale_y = img_height / 640  # YOLOv5 default height
+
+            df['xmin'] = df['xmin'] * scale_x
+            df['xmax'] = df['xmax'] * scale_x
+            df['ymin'] = df['ymin'] * scale_y
+            df['ymax'] = df['ymax'] * scale_y
+
             output_file = os.path.join(output_dir, OUTPUT_FILES[label])
             df.to_csv(output_file, index=False)
             print(f"{label.capitalize()} bounding boxes saved to: {output_file}")

@@ -41,7 +41,7 @@ Let’s break each step down in detail:
 uses the **YOLOv5 model** to detect objects like cars, trucks, persons, and road signs from images extracted from video frames.
 
 #### **How It Works:**
-- The **YOLOPY.py** script loads the pre-trained **YOLOv5x** model from the PyTorch Hub.
+- The **YOLOv5.py** script loads the pre-trained **YOLOv5x** model from the PyTorch Hub.
 - It processes images from the **`Images`** folder and saves the bounding box results to **CSV files**.
 
 #### **Steps to Run YOLOv5 Detection:**

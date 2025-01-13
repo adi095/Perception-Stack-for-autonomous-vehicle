@@ -2,11 +2,11 @@ from moviepy.editor import ImageSequenceClip
 import os
 
 # Set the folder path and image file prefix
-image_folder_path = "/Users/irakligrigolia/Desktop/WPI 22-23/CV/Einstein Vision/Blender"
+image_folder_path = ""
 image_prefix = ""
 
 # Set the output video path and filename
-output_video_folder = "/Users/irakligrigolia/Desktop/WPI 22-23/CV/Einstein Vision/videos"
+output_video_folder = ""
 output_video_filename = "output_video.mp4"
 output_video_path = os.path.join(output_video_folder, output_video_filename)
 

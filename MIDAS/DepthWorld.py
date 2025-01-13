@@ -27,8 +27,6 @@ car_pixel_coordinates = []
 person_pixel_coordinates = []
 traffic_pixel_coordinates = []
 
-# K = np.loadtxt('/home/uthira/Documents/GitHub/P3Data/P3Data/Calib/calibration.mat')
-
 K = np.array([[1.5947e+03, 0, 655.2961],
               [0, 1.6077e+03, 414.3627],
               [0, 0, 1]])
@@ -49,7 +47,7 @@ I = np.identity(3)
 # Iterate over each row in the car coordinates CSV file
 for i, row in enumerate(car_coordinates_list):
     # Read the image file
-    image_path = '/home/uthira/Documents/GitHub/MiDaS/Depth_map.png'  
+    image_path = ''  
     image = cv2.imread(image_path, cv2.IMREAD_GRAYSCALE)
 
     # Get the x and y coordinates
@@ -86,7 +84,7 @@ for i, row in enumerate(car_coordinates_list):
 # Iterate over each row in the person coordinates CSV file
 for i, row in enumerate(person_coordinates_list):
     # Read the image file
-    image_path = '/home/uthira/Documents/GitHub/MiDaS/Depth_map.png'  
+    image_path = ''  
     image = cv2.imread(image_path, cv2.IMREAD_GRAYSCALE)
 
     # Get the x and y coordinates

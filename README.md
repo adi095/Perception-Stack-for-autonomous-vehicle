@@ -1,4 +1,4 @@
-# Perception stack for Autonomous vehicle**
+# Perception stack for Autonomous vehicle
 
 ## 📌 **Project Overview**
 This project integrates **YOLOv5 object detection**, **MiDaS depth estimation**, **Lane detection**, **Collision detection** and **Blender 3D visualization** to create a comprehensive obstacle detection and depth estimation system. The workflow includes detecting objects from video frames, estimating their depth values, converting 2D bounding boxes to 3D world coordinates, and visualizing the detected objects in a 3D scene using Blender.

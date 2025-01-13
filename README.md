@@ -47,6 +47,7 @@ The **MiDaS model** is used to estimate depth maps from the input images.
 #### **How It Works:**
 - The **`depth_overall.py`** script loads the MiDaS model and processes images from the **`Images`** folder.
 - It generates depth maps for each image and saves them to the **`Depth_Images`** folder.
+- Depth values are extracted only for the pixels inside bounding boxes to get more accurate depth values for each object.
 -  Network: MiDaS Transformer (https://github.com/jankais3r/Video-Depthify)
 
 #### **Steps to Run Depth Estimation:**
@@ -76,7 +77,8 @@ These scripts are integrated into **`blender_final.py`** to add lane markings to
    ```bash
    blender --background --python create_solid_line.py
    ```
-3. **Run `blender_final.py` to Integrate Everything:**
+   
+**Run `blender_final.py` to Integrate Everything:**
    ```bash
    blender --background --python blender_final.py
    ```

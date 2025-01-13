@@ -36,7 +36,7 @@ This will generate CSV files in the **`Results`** folder, such as:
 - **bounding_boxes_Traffic_Lights.csv**
 - **bounding_boxes_Stop_Signs.csv**
 
-
+Example Image is as below
   ![image](https://github.com/user-attachments/assets/595ae806-6513-476c-bb38-4326775c3d6c)
 
 ---
@@ -55,7 +55,7 @@ The **MiDaS model** is used to estimate depth maps from the input images.
 python depth_overall.py
 ```
 This will generate depth maps like below (This is a full image depth map)
-- **depth_frame_001.png**
+
 ![image](https://github.com/user-attachments/assets/c83f24cc-521a-479b-8f4e-b9218f998ab8)
 
 ---

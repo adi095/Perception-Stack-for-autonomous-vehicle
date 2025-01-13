@@ -134,7 +134,7 @@ This will render the scene and save images to the **`Blender`** folder.
 
 ### **Step 1: Object Detection**
 ```bash
-python YOLOPY.py
+python YOLOV5.py
 ```
 
 ### **Step 2: Depth Estimation**

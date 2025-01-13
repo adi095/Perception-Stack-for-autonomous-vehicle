@@ -56,7 +56,7 @@ python depth_overall.py
 ```
 This will generate depth maps like:
 - **depth_frame_001.png**
-- **depth_frame_002.png**
+![image](https://github.com/user-attachments/assets/c83f24cc-521a-479b-8f4e-b9218f998ab8)
 
 ---
 

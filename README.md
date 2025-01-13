@@ -52,6 +52,15 @@ The **MiDaS model** is used to estimate depth maps from the input images.
 - **`DepthWorld.py`** script takes depth values and bounding box coordinates from the depth estimation step and converts 2D pixel coordinates to world coordinates in a 3D space. Applies Camera Intrinsics (Calibration Matrix)
 - Network: MiDaS Transformer (https://github.com/jankais3r/Video-Depthify)
 
+  K = np.array([
+    [fx, 0, cx],
+    [0, fy, cy],
+    [0, 0, 1]
+])
+
+fx and fy are the focal lengths.
+cx and cy are the principal points (optical centers)
+
 #### **Steps to Run Depth Estimation:**
 ```bash
 python depth_overall.py

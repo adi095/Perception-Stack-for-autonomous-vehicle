@@ -37,7 +37,8 @@ This will generate CSV files in the **`Results`** folder, such as:
 - **bounding_boxes_Stop_Signs.csv**
 
 Example Image is as below
-  ![image](https://github.com/user-attachments/assets/595ae806-6513-476c-bb38-4326775c3d6c)
+
+![image](https://github.com/user-attachments/assets/595ae806-6513-476c-bb38-4326775c3d6c)
 
 ---
 
